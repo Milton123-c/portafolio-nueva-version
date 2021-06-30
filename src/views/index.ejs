@@ -1,0 +1,261 @@
+<%- include("header/header")%>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Desarrollo Web</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navegation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#curriculum">Hoja de vida</a></li>
+                    <li class="nav-item"><a class="nav-link" id="ver" href="#my_goals">Metas</a></li>
+                    <li class="nav-item"><a href="#my_objectives" class="nav-link">Objetivos</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="container-fluid mt-13" id="header">
+        <!--fila uno-->
+        <div class="container" style="margin-bottom: 9%;" id="screen-hide">
+            <div class="row border-bottom-0" id="inicio">
+                <div class=" col-md-4 mt-1 pulse">
+                    <img src="/image/logo2.png" class="img-thumbnail flipInY" id="imagen1" alt="">
+                </div>
+                <div class="col-md-8 texto text-center mt-5 bounceInDown">
+                    <h1 class="tamaño-h1"><span class="azul-uno">¡</span> Hola <span class="azul-uno">!</span> Mi nombre
+                        es <span class="azul-uno">Milton David</span>, gracias por visitar mi sitio <span
+                            class="texto-especial">Web</span>. </h1>
+                    <h3 class="tamaño-h1-2">Me gusta el desarrollo web, el desarrollo de aplicaciones Android y el
+                        desarrollo de app de escritorio </h3>
+                    <hr>
+                    <h3 class="tamaño-h3-1">Soy estudiante en <span class="text-primary">tecnico de informatica</span> y
+                        de <span class="azul-uno">ingenieria Software</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class=" row mt-3 fondo-tenue" id="project">
+            <div class="col-md-12 text-center">
+
+                <div class="fondo-gris m-3 bord">
+                    <h1 class="fuente">Mis Proyectos.</h1>
+                </div>
+
+                <div>
+                    <img src="/image/react.png" title="Aplicaciones con React y React native" width="50px" alt="">
+                    <img src="/image/css.png" title="Dominio en CSS" width="50px" alt="">
+                    <img src="/image/html-5.png" title="Dominio con HTML5" width="50px" alt="">
+                    <img src="/image/javascript.png" title="Desarrollo con Node js y JavaScript" width="50px" alt="">
+                    <img src="/image/java.png" title="Conocimiento con JAVA" width="50px" alt="">
+                    <img src="/image/python.png" title="Desarrollo con python y Django" width="50px" alt="">
+                </div>
+
+                <div class=" col-md-12 project texto">
+                    <h2 class="mover tamaño-h1">Mis proyectos estan en desarrollo....</h2>
+                </div>
+                <div>
+                    <img src="/image/trabajando gif.gif" title="En desarrollo..." class="img-fluid" alt="">
+                </div>
+
+                <div>
+                    <a href="#collapseUno" role="button" aria-expanded="false" aria-controls="collapse"
+                        class="btn btn-danger" data-bs-toggle="collapse">Los iconos estan sujetas a derechos de autor.
+                        Enlaces abajos.</a>
+                    <div class="collapse" id="collapseUno">
+
+                        <div class="card" style="display: inline-flex;">
+                            <div>Icons made by
+                                <a href="https://www.flaticon.com/authors/kiranshastry"
+                                    title="Kiranshastry">Kiranshastry</a>
+                                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                            </div>
+                            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                            <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons"
+                                    title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></div>
+                            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-4"></div>
+        <div class="container-fluid fondo-tenue" id="curriculum">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <a href="/curriculum/curriculum.pdf" class="btn btn-primary mb-2 mt-2">Descargar hoja de vida</a>
+                    <iframe src="" id="frame-pdf" width="100%" height="500px" frameborder="0"></iframe>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="container-fluid fondo mt-4 border-formulario">
+                        <br>
+                        <div class="w-75 ocultar " id="centro">
+
+                            <div>
+                                <h3 class="texto">Contacto</h3>
+                            </div>
+
+                            <form  action="" id="form_one" >
+                              
+                                <div class="form-group">
+                                    <label for="gmail_uno" class="label">Enviar mensaje. correo 1 <span
+                                            style="display: none;" class="badge bg-danger" id="errorUno">¡Error!, Campos
+                                            Vacios</span></label>
+                                    <input type="text" name="message_one" id="message_one" class="form-control"
+                                        placeholder="Escribir mensaje" aria-describedby="helpId">
+                                    <label for="" class="label">Ingrese su nombre</label>
+                                    <input type="text" name="gmail_nombre_uno" id="gmail_nombre_uno"
+                                        class="form-control" placeholder="Nombre" aria-describedat="nombre">
+
+                                    <div class="nav mt-2">
+
+                                        <input class="btn btn-primary" id="enviarUno" type="submit"
+                                            value="Enviar Mensaje">
+                                        <a href="mailto:miltonmercado92@gmail.com" class="nav-link"
+                                            title="Ir a GMAIL"><i class="bi bi-envelope-fill"></i>
+                                            miltonmercado92@gmail.com</a>
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <form  action="" id="form_two">
+                                <div class="form-group">
+                                    <label for="gmail_dos" class="label">Enviar mensaje. Correo 2 <span
+                                            style="display: none;" class="badge bg-danger" id="errorDos">¡Error!, Campos
+                                            Vacios</span></label>
+                                    <input type="text" name="message_two" id="message_two" class="form-control"
+                                        placeholder="Escribir mensaje" aria-describedby="helpId">
+                                    <label for="" class="label">Ingrese su nombre</label>
+                                    <input type="text" name="gmail_nombre_dos" id="gmail_nombre_dos"
+                                        class="form-control" placeholder="Nombre" aria-describedat="nombre">
+                                    <div class="nav mt-2">
+
+                                        <input class="btn btn-primary" id="enviarDos" type="submit"
+                                            value="Enviar Mensaje">
+                                        <a href="mailto:davidmercado5772@gmail.com" class="nav-link"
+                                            title="Ir a GMAIL"><i class="bi bi-envelope-fill"></i>
+                                            davidmercado5772@gmail.com</a>
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <p class="label">Contacto por whatsapp</p>
+                            <a href="https://wa.link/9c7nwv" class="btn btn-outline-primary texto" title="WHATSAPP"
+                                style="margin-top: -15px;">+506 7082 9179</a>
+                            <br>
+                            <a href="https://wa.link/9c7nwv" class="btn btn-outline-primary texto mt-2 mb-4" title="WHATSAPP">+506 6259
+                                1736</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3" id="my_goals">
+            <div class="container col-md-12">
+                <div class="fondo-gris bord m-3">
+                    <h1 class="fuente  text-center">Mis Metas.</h1>
+
+                </div>
+            </div>
+            <div class="col-md-5" style="margin: auto;">
+
+                <div>
+                    <ol class="list-group">
+
+                        <li class=" list-group-item list-group-item-dark">Ser un buen desarrollador web.</li>
+                        <li class=" list-group-item list-group-item-light">Ser un buen programador.</li>
+                        <li class="list-group-item list-group-item-dark">Tener mi propia empresa de desarrollo de
+                            Software.</li>
+                        <li class="list-group-item list-group-item-light">Tener 3 Carreras de ingenieria</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4 fondo-tenue" id="my_objectives">
+            <div class="container col-md-12">
+                <div class="fondo-gris bord m-3">
+                    <h1 class="fuente text-center">Mis objectivos.</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card slideInLeft">
+                                <img src="/image/desarrolloWeb.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <p class="card-text">Desarrollo web</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 texto text-center mt-5">
+                            <h5 class="tamaño-h1-2 border-imagen slideInDown"> <span>Poder desempeñarme en actividades
+                                    en el àrea de <br> <span class="azul-uno">programacion</span></span>,
+                                <span class="text-primary">desarrollo web</span>, <br> y demostrar mis cualidades y
+                                habilidades para
+                                cumplir y sobrepasar las <span class="azul-uno">metas que me proponga.</span>
+                            </h5>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card slideInRight">
+                                <img src="/image/programador.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <p class="card-text">Programaciòn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3"></div>
+        </div>
+
+    </header>
+
+    <footer class="row fondo-negro" id="footer">
+        <div class="col-md-12 text-center text-white" style="margin: auto;">
+            <br>
+            <h3 class="texo">Mapa del sitio</h3>
+            <ul class="nav-user">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#project" class="nav-link">Proyectos</a></li>
+                <li><a href="#curriculum" class="nav-link">Hoja de vida</a></li>
+                <li><a href="#my_goals" class="nav-link">Metas</a></li>
+                <li><a href="#my_objectives" class="nav-link">Objetivos</a></li>
+
+            </ul>
+
+            <br>
+            <ul class="nav-user">
+                <li><a href="https://wa.link/9c7nwv" class="nav-link"><i class="bi bi-whatsapp"></i> +506 7082 9179</a></li>
+                <li><a href="https://wa.link/9c7nwv" class="nav-link"><i class="bi bi-whatsapp"></i> +506 6259 1736</a></li>
+                <li><a href="mailto:miltonmercado92@gmail.com" class="nav-link"><i class="bi bi-envelope-fill"></i> miltonmercado92@gmail.com</a></li>
+                <li><a href="mailto:davidmercado5772@gmail.com" class="nav-link"><i class="bi bi-envelope-fill"></i> davidmercado5772@gmail.com</a></li>
+
+            </ul>
+            <br>
+        </div>
+    </footer>
+
+    <%- include("footer/footer")%>
