@@ -38,7 +38,7 @@ $(document).ready(()=>{
 
                
                fetch(url, {
-                    method: 'PUT',
+                    method: 'POST',
                     body: JSON.stringify(datos),
                     headers:{
                          'X-CSRFToken' : csrftoken,
@@ -48,9 +48,9 @@ $(document).ready(()=>{
                })
                .then((response)=>{
                     if(response.ok){
-                         alert('datos enviados');
+                         Alert(1,0);
                     }else{
-                         alert('error')
+                         Alert(0,1);
                     }
                })
                .catch(error => console.log("error"));
@@ -98,11 +98,11 @@ $(document).ready(()=>{
                     message: $('#message_two').val()
                };
 
-               var url = "/formOne";
+               var url = "/formTwo";
 
                
                fetch(url, {
-                    method: 'PUT',
+                    method: 'POST',
                     body: JSON.stringify(datos),
                     headers:{
                          'X-CSRFToken' : csrftoken,
@@ -112,9 +112,9 @@ $(document).ready(()=>{
                })
                .then((response)=>{
                     if(response.ok){
-                         alert('datos enviados');
+                         Alert(1,0);
                     }else{
-                         alert('error')
+                         Alert(0,1);
                     }
                })
                .catch(error => console.log("error"));
@@ -126,6 +126,17 @@ $(document).ready(()=>{
                $("#errorDos").addClass("bounceInDown");
           }
      });
+
+     function Alert(res, error){
+          
+          if(res == 1){
+
+               bootbox.alert('Mensaje enviado!');
+
+          }else if (error == 1){
+               bootbox.alert("<p style='color:red' >Error Al Enviar El Mensaje!!!!!!</p>");
+          }
+     }
      
 });
       

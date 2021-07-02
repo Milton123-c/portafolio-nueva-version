@@ -63,6 +63,43 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     list-style-type: none;
 }
+
+.hidden{
+    overflow: hidden;
+}
+
+#zoomParrafo{
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    box-shadow: 5px 10px 10px;
+    margin-right: 0;
+   transition-property: background-color;
+   transition-duration: 0.5s;
+   transition: margin-right ease-in-out 0.5s;
+   transition: border-right ease-in-out 0.2s;
+  
+}
+
+#zoomParrafo:hover{
+    background-color: rgba(137, 162, 199, 0.342);   
+    margin-right: 15px;
+    border-right: 10px solid rgba(127, 60, 189, 0.589);
+}
+
+#imagenDos{
+    margin-right: 0;
+    transition-property: margin-right;
+    transition-duration: 0.5s;
+    border: 1px solid;
+    box-shadow: 5px 10px 10px;
+}
+
+#imagenDos:hover{
+    margin-right: 14px;
+}
+
 .texto-ol li{
     padding-left: 2rem;
     padding-top: 5px;
